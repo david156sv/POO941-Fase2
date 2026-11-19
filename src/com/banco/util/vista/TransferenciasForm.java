@@ -87,9 +87,18 @@ public class TransferenciasForm extends JFrame {
         JTabbedPane pestanas = new JTabbedPane();
         pestanas.addTab("Transferir", construirPanelTransferir());
         pestanas.addTab("Movimientos", construirPanelMovimientos());
-        add(pestanas);
+        add(pestanas, BorderLayout.CENTER);
 
-        setSize(960, 520);
+        JButton btnVolverCuentas = new JButton("Volver a Cuentas");
+        btnVolverCuentas.addActionListener(e -> {
+            dispose();
+            new CuentasForm().setVisible(true);
+        });
+        JPanel barraInferior = new JPanel(new FlowLayout(FlowLayout.RIGHT, 10, 6));
+        barraInferior.add(btnVolverCuentas);
+        add(barraInferior, BorderLayout.SOUTH);
+
+        setSize(960, 560);
         setLocationRelativeTo(null);
     }
 
