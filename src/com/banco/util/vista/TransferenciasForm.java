@@ -76,6 +76,7 @@ public class TransferenciasForm extends JFrame {
     private final JTable tabla = new JTable(modeloTabla);
 
     public TransferenciasForm() {
+        MenuReportes.instalar(this);
         setTitle("Banco Académico UDB - Transferencias y Movimientos");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         java.net.URL logo = getClass().getResource("/com/banco/img/logo.jfif");

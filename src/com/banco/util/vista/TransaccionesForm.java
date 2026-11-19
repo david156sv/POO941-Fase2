@@ -50,6 +50,7 @@ public class TransaccionesForm extends javax.swing.JFrame {
      */
     public TransaccionesForm() {
         initComponents();
+        MenuReportes.instalar(this);
         setIconImage(new javax.swing.ImageIcon(getClass().getResource("/com/banco/img/logo.jfif")).getImage());
         configurarFormulario();
     }

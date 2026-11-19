@@ -49,6 +49,7 @@ public class CuentasForm extends javax.swing.JFrame {
 
     public CuentasForm() {
         initComponents();
+        MenuReportes.instalar(this);
         setIconImage(new javax.swing.ImageIcon(getClass().getResource("/com/banco/img/logo.jfif")).getImage());
         configurarFormulario();
         recargarClientes();

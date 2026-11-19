@@ -5,7 +5,6 @@ import java.sql.*;
 import java.time.LocalDate;
 import java.util.*;
 
-/** Consultas de solo lectura. Las fechas finales incluyen el dia completo. */
 public class ReporteDAO {
     @FunctionalInterface
     public interface ConexionFactory { Connection abrir() throws SQLException; }

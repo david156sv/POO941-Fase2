@@ -55,13 +55,7 @@ public class ClientesForm extends javax.swing.JFrame {
     }
 
     private void configurarFormulario() {
-        javax.swing.JMenuBar barra = new javax.swing.JMenuBar();
-        javax.swing.JMenu menu = new javax.swing.JMenu("Reportes");
-        javax.swing.JMenuItem abrirReportes = new javax.swing.JMenuItem("Reportes financieros y de cuentas");
-        abrirReportes.addActionListener(e -> new ReportesForm().setVisible(true));
-        menu.add(abrirReportes);
-        barra.add(menu);
-        setJMenuBar(barra);
+        MenuReportes.instalar(this);
         setTitle("Banco Académico UDB - Gestión de Clientes");
         setLocationRelativeTo(null);
 

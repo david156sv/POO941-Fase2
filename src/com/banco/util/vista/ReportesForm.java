@@ -8,12 +8,12 @@ import java.util.concurrent.ExecutionException;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
-/** Persona 3: reportes tabulares con filtros y generación de PDF. */
 public class ReportesForm extends JFrame {
     private Reporte reporte;
 
     public ReportesForm() {
         initComponents();
+        MenuReportes.instalar(this);
         java.net.URL logo = getClass().getResource("/com/banco/img/logo.jfif");
         if (logo != null) setIconImage(new ImageIcon(logo).getImage());
         tipo.setModel(new DefaultComboBoxModel<>(TipoReporte.values()));

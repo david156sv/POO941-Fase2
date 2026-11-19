@@ -7,7 +7,6 @@ import java.time.format.DateTimeFormatter;
 import java.text.Normalizer;
 import java.util.Locale;
 
-/** Guarda cada exportacion con nombre unico, sin preguntar carpeta ni reemplazo. */
 public final class ArchivoReporte {
     private ArchivoReporte() { }
     public static Path generar(Reporte reporte) throws IOException {

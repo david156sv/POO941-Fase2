@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/** Resultado independiente de la interfaz y de la conexion JDBC. */
 public final class Reporte {
     public final String titulo;
     public final String filtros;

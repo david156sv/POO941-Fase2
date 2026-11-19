@@ -11,7 +11,6 @@ import java.nio.file.Path;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-/** PDF directo, sin impresoras ni dialogos de configuracion. */
 public final class ExportadorPDF {
     private ExportadorPDF() { }
     public static void exportar(Reporte reporte, Path destino) throws IOException {
